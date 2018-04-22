@@ -42,6 +42,8 @@ public class DrawPanel extends JPanel{
 	      image.paintIcon(this, page, x, y);
 	   }
 	 
+	   
+	  //Use this method to reset everything
 	  public void reset() {
 		  x = 20;
 	      y = 40;
