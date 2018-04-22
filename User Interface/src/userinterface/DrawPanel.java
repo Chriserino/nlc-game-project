@@ -13,19 +13,8 @@ public class DrawPanel extends JPanel{
 	private final int WIDTH = 1200, HEIGHT = 850;
 	private final int DELAY = 20, IMAGE_SIZE = 47;
 	
-	
-	   
-	
-	//private Circle circleRed, circleYellow, circleGreen;
-	private JButton bMenu;
-	private JButton bStart;
-	private JPanel buttonPanel;
-	private JPanel rightPanel;
-	private JPanel leftPanel;
-	private DrawPanel dPanel;
 	private boolean pause;
 	
-	//ImageIcon = Test image
 	private ImageIcon image;
 	private Timer timer;
 	private int x, y, moveX, moveY;
