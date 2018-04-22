@@ -35,7 +35,7 @@ public class DrawPanel extends JPanel{
 		      timer.start();
    
 	   }
-	   //method to draw the circles on screen
+	  
 	   public void paintComponent (Graphics page)
 	   {
 	      super.paintComponent(page);
@@ -52,18 +52,7 @@ public class DrawPanel extends JPanel{
 		
 		
 		
-//class that listens for button to be clicked
-//		private class ButtonListener implements ActionListener{
-//		      //method that accepts events, in this case "click"
-//		      public void actionPerformed (ActionEvent event)
-//		      {
-//		    	  if (event.getSource() == bStart)
-//		    		  reset();
-//		    	  //calls method to change the circle colors
-//		    	  System.out.println("PRESSY PRESSY");
-//		      }
-//		      
-//	      }
+
 		
 		private class ReboundListener implements ActionListener{
 		      //--------------------------------------------------------------
@@ -78,9 +67,7 @@ public class DrawPanel extends JPanel{
 		         
 		         if (x <= 0 || x >= WIDTH-IMAGE_SIZE)
 		            moveX = moveX * -1;
-		         	//needs to add in the sizes of the panels dynamically
-		         	//ex:  x <= leftPanel.getWidth() ||  x >= (WIDTH-IMAGE_SIZE)-rightPanel.getWidth()
-
+		         	
 		         if (y <= 0 || y >= HEIGHT-IMAGE_SIZE)
 		            moveY = moveY * -1;
 		    
