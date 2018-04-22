@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 
 public class UIDriver {
 	public static void main(String[] args) {
-		//create JFrame object
+		//create JFrame object.
 		JFrame frame = new JFrame ("Traffic Light");
 	      frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 	      
