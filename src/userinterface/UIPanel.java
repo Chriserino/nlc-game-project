@@ -29,7 +29,7 @@ public class UIPanel extends JPanel{
 
 	
 	
-	   //Constructor
+	   //Constructor.
 	   public UIPanel()
 	   {
 //		      timer = new Timer(DELAY, new ReboundListener());
