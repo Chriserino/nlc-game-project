@@ -21,7 +21,7 @@ public class DrawPanel extends JPanel{
 
 	
 	
-	   //Constructor.
+	   //Constructor
 	   public DrawPanel()
 	   {
 		      timer = new Timer(DELAY, new ReboundListener());
