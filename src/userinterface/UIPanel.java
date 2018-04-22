@@ -32,15 +32,9 @@ public class UIPanel extends JPanel{
 	   //Constructor
 	   public UIPanel()
 	   {
-//		      timer = new Timer(DELAY, new ReboundListener());
-//		      image = new ImageIcon("small bacon.png");
-//		      x = 20;
-//		      y = 40;
-//		      moveX = moveY = 3;
-
 		      setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		      setBackground(Color.black);
-//		      timer.start();
+
 
 		   
 	      	//create the buttons
@@ -54,7 +48,7 @@ public class UIPanel extends JPanel{
 			
 			
 			
-			//**make a panel to put the button on
+			//**make a panel to put the button on**
 			buttonPanel = new JPanel();
 			//set properties
 			buttonPanel.setBackground(Color.black);
@@ -64,37 +58,19 @@ public class UIPanel extends JPanel{
 			buttonPanel.add(bStart, BorderLayout.WEST);
 			buttonPanel.setPreferredSize(new Dimension(100,50));
 
+			//Create DrawPanel
 			dPanel = new DrawPanel();
-			//set UIpanel layout properties 
+			
+			//set UIpanel layout properties and add button / Draw panels
 			setLayout(new BorderLayout());
-			//add button panel to the UIpanel
-			//set it's layout orientation
-//			add(leftPanel, BorderLayout.WEST);
-//			add(rightPanel, BorderLayout.EAST);
 			add(dPanel, BorderLayout.NORTH);
 			add(buttonPanel, BorderLayout.SOUTH);
 	      setPreferredSize (new Dimension(1200, 900));
 	      setBackground (Color.blue);
 
 	   }
-	   //method to draw the circles on screen
-//	   public void paintComponent (Graphics page)
-//	   {
-//	      super.paintComponent(page);
-//	      image.paintIcon(this, page, x, y);
-//	   }
-	 
-//	  public void reset() {
-//		   x = 20;
-//		      y = 40;
-//		      moveX = moveY = 3;
-//	  }
-	   
-	   
-		
-		
-		
-//class that listens for button to be clicked
+	   		
+	   //class that listens for button to be clicked
 		private class ButtonListener implements ActionListener{
 		      //method that accepts events, in this case "click"
 		      public void actionPerformed (ActionEvent event)
@@ -108,27 +84,6 @@ public class UIPanel extends JPanel{
 		      
 	      }
 		
-//		private class ReboundListener implements ActionListener{
-//		      //--------------------------------------------------------------
-//		      //  Updates the position of the image and possibly the direction
-//		      //  of movement whenever the timer fires an action event.
-//		      //--------------------------------------------------------------
-//		      public void actionPerformed(ActionEvent event)
-//		      {
-//		         x += moveX;
-//		         y += moveY;
-//		         
-//		         
-//		         if (x <= 0 || x >= WIDTH-IMAGE_SIZE)
-//		            moveX = moveX * -1;
-//		         	//needs to add in the sizes of the panels dynamically
-//		         	//ex:  x <= leftPanel.getWidth() ||  x >= (WIDTH-IMAGE_SIZE)-rightPanel.getWidth()
-//
-//		         if (y <= 0 || y >= ((HEIGHT-IMAGE_SIZE) - buttonPanel.getHeight()))
-//		            moveY = moveY * -1;
-//		    
-//		         repaint();
-//		      }
-//		}
+
 
 }
